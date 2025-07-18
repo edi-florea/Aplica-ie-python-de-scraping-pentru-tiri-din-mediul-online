@@ -240,3 +240,48 @@
 2025-07-15 10:47:35,771 - INFO - 127.0.0.1 - - [15/Jul/2025 10:47:35] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03´`Þ¶wÓWxßªÕK\x94\x80¾å0¿\x0b\x04K#M\x05¸ö&\x17/¦\x13¬ (¤æü\x8c0\x96ª!\x9eÙö?f\x0c\x89ñ\x9d\x806Â þ\x96\x91E1HâoS÷\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÊÊ\x00\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04ÀøFbQ\x8c$T\x19µ×\x94ª4Ø\x15\x8eHÍ¤òÌu¥¯½q\x1c¡ø6Öt`\x0bD\x15\x19TeW\x8cPC\x04yyT\x9câ\x85nE\x85pÔ¥\x93_bu¬Ì\x17F\x90K`a}\x96jU÷æ@d[0m" 400 -
 2025-07-15 10:47:35,773 - ERROR - 127.0.0.1 - - [15/Jul/2025 10:47:35] code 400, message Bad request version ("ä5{×'ù4S")
 2025-07-15 10:47:35,773 - INFO - 127.0.0.1 - - [15/Jul/2025 10:47:35] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03 4ü8KW§ï>&kk\x8a©W\x19¾¶îìS®\x9a\x01ÊÜ\x89¾³áî\x8b \x0c=úõI¬ú#\x18¦'l`\x88A\x1biG\x1fµ\x1a&ì\x8f\x0eÙ3¤8\x96±ü\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Súú\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04Àå\x18\x9d\\y\x8fÜÄ\x19öU!\x17º06É\x90Ìª-üÒ\x8d],\x03APW_J\x17£Õ¡ÎÓ\x9f¬RZ&è.ÛFsc\x02CfES8\x05·\x17IPRÀ\x14òÌi£¸8õè\x9fm\x9b\x03ê\x8b\x87\x01ZF\x03\x9c\x1a#µCX±±y'NÊµrÙÂ§³¤{Ig§E\x04NÆT´¦·¹G\x05\x85Í²\x19\x91x\x04¹(\x0ca´\x17^â»Æ0s_\x1bVõá\x1añLrAI\x9dMõ#\x9bë\x14×\x14¼,É\x95É»°Ák\x11Øû\x8bý#Iwd\x02\x0e\x0brö\x00>Ïû\x8e1'±ÃI\x0d+¼\x04\x9dz¯\\F¹O\x91iå»yÓxYXX\x8dÙÌ±1¬G\x1dÁ\x11;EN¶º0¸XÅæÓF9È§t¬\x93O!¥\x0cä5{×'ù4S[0m" 400 -
+2025-07-17 13:15:54,321 - INFO - Rulează comanda: scrape
+2025-07-17 13:15:54,329 - INFO - === Începe procesul de scraping ===
+2025-07-17 13:15:54,585 - INFO - Conectat cu succes la baza de date SQL Server
+2025-07-17 13:15:54,585 - INFO - Începe procesul de scraping...
+2025-07-17 13:15:54,585 - INFO - Începe scraping-ul pentru HotNews.ro
+2025-07-17 13:15:54,592 - ERROR - Eroare la scraping HotNews: HTTPSConnectionPool(host='hotnews.ro', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000227C6AF9490>: Failed to resolve 'hotnews.ro' ([Errno 11001] getaddrinfo failed)"))
+2025-07-17 13:15:54,592 - INFO - Începe scraping-ul pentru Digi24.ro
+2025-07-17 13:15:54,602 - ERROR - Eroare la scraping Digi24: HTTPSConnectionPool(host='www.digi24.ro', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000227C78BE570>: Failed to resolve 'www.digi24.ro' ([Errno 11001] getaddrinfo failed)"))
+2025-07-17 13:15:54,602 - INFO - Procesul de scraping s-a terminat cu succes
+2025-07-17 13:15:54,604 - INFO - Conexiunea la baza de date a fost închisă
+2025-07-17 13:15:54,606 - INFO - === Procesul de scraping s-a terminat ===
+2025-07-17 13:17:59,137 - INFO - Rulează comanda: test
+2025-07-17 13:17:59,137 - INFO - Testează conexiunea la baza de date...
+2025-07-17 13:17:59,336 - INFO - Conexiune reușită! Numărul de articole în baza de date: 81
+2025-07-17 13:20:08,438 - INFO - Rulează comanda: scheduler
+2025-07-17 13:20:08,447 - INFO - Pornește scheduler-ul pentru scraping automat...
+2025-07-17 13:20:08,447 - INFO - === Începe procesul de scraping ===
+2025-07-17 13:20:08,577 - INFO - Conectat cu succes la baza de date SQL Server
+2025-07-17 13:20:08,577 - INFO - Începe procesul de scraping...
+2025-07-17 13:20:08,577 - INFO - Începe scraping-ul pentru HotNews.ro
+2025-07-17 13:20:08,593 - ERROR - Eroare la scraping HotNews: HTTPSConnectionPool(host='hotnews.ro', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001758A26E630>: Failed to resolve 'hotnews.ro' ([Errno 11001] getaddrinfo failed)"))
+2025-07-17 13:20:08,593 - INFO - Începe scraping-ul pentru Digi24.ro
+2025-07-17 13:20:08,604 - ERROR - Eroare la scraping Digi24: HTTPSConnectionPool(host='www.digi24.ro', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001758A2F6750>: Failed to resolve 'www.digi24.ro' ([Errno 11001] getaddrinfo failed)"))
+2025-07-17 13:20:08,605 - INFO - Procesul de scraping s-a terminat cu succes
+2025-07-17 13:20:08,607 - INFO - Conexiunea la baza de date a fost închisă
+2025-07-17 13:20:08,607 - INFO - === Procesul de scraping s-a terminat ===
+2025-07-18 08:36:35,968 - INFO - Rulează comanda: api
+2025-07-18 08:36:35,968 - INFO - Pornește serverul API...
+2025-07-18 08:36:37,179 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.88.191.53:5000
+2025-07-18 08:36:37,179 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-18 08:36:37,189 - INFO -  * Restarting with stat
+2025-07-18 08:36:37,660 - INFO - Rulează comanda: api
+2025-07-18 08:36:37,660 - INFO - Pornește serverul API...
+2025-07-18 08:36:37,690 - WARNING -  * Debugger is active!
+2025-07-18 08:36:37,692 - INFO -  * Debugger PIN: 191-465-358
+2025-07-18 08:37:09,891 - INFO - 10.88.191.53 - - [18/Jul/2025 08:37:09] "GET /api/news HTTP/1.1" 200 -
+2025-07-18 08:37:10,023 - INFO - 10.88.191.53 - - [18/Jul/2025 08:37:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-18 08:37:30,955 - INFO - 10.88.191.53 - - [18/Jul/2025 08:37:30] "GET /api/news/1 HTTP/1.1" 200 -
+2025-07-18 08:37:38,234 - INFO - 10.88.191.53 - - [18/Jul/2025 08:37:38] "GET /api/news/24 HTTP/1.1" 200 -
+2025-07-18 08:42:26,804 - INFO - Rulează comanda: test
+2025-07-18 08:42:26,804 - INFO - Testează conexiunea la baza de date...
+2025-07-18 08:42:27,058 - INFO - Conexiune reușită! Numărul de articole în baza de date: 81

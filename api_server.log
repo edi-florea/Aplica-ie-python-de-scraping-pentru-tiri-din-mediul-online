@@ -1,0 +1,86 @@
+2025-07-15 10:06:44,867 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:06:44,868 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:06:44,870 - INFO -  * Restarting with stat
+2025-07-15 10:06:45,089 - WARNING -  * Debugger is active!
+2025-07-15 10:06:45,092 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:07:30,494 - INFO - 10.56.27.53 - - [15/Jul/2025 10:07:30] "[33mGET / HTTP/1.1[0m" 404 -
+2025-07-15 10:07:30,547 - INFO - 10.56.27.53 - - [15/Jul/2025 10:07:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-15 10:15:19,632 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:15:19,632 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:15:19,636 - INFO -  * Restarting with stat
+2025-07-15 10:15:19,849 - WARNING -  * Debugger is active!
+2025-07-15 10:15:19,852 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:16:56,956 - INFO -  * Detected change in 'D:\\practica_2025\\api_server.py', reloading
+2025-07-15 10:16:57,002 - INFO -  * Restarting with stat
+2025-07-15 10:16:57,303 - WARNING -  * Debugger is active!
+2025-07-15 10:16:57,303 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:17:10,520 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:17:10,520 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:17:10,522 - INFO -  * Restarting with stat
+2025-07-15 10:17:10,755 - WARNING -  * Debugger is active!
+2025-07-15 10:17:10,759 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:17:35,580 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:17:35,580 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:17:35,580 - INFO -  * Restarting with stat
+2025-07-15 10:17:35,793 - WARNING -  * Debugger is active!
+2025-07-15 10:17:35,793 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:18:42,258 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:18:42,258 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:18:42,264 - INFO -  * Restarting with stat
+2025-07-15 10:18:42,470 - WARNING -  * Debugger is active!
+2025-07-15 10:18:42,470 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:19:03,481 - INFO - 127.0.0.1 - - [15/Jul/2025 10:19:03] "[33mGET / HTTP/1.1[0m" 404 -
+2025-07-15 10:19:03,531 - INFO - 127.0.0.1 - - [15/Jul/2025 10:19:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-15 10:21:16,936 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:21:16,936 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:21:16,936 - INFO -  * Restarting with stat
+2025-07-15 10:21:17,200 - WARNING -  * Debugger is active!
+2025-07-15 10:21:17,206 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:24:37,056 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:24:37,057 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:24:37,058 - INFO -  * Restarting with stat
+2025-07-15 10:24:37,292 - WARNING -  * Debugger is active!
+2025-07-15 10:24:37,300 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:26:34,506 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:26:34,506 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:26:34,510 - INFO -  * Restarting with stat
+2025-07-15 10:26:34,747 - WARNING -  * Debugger is active!
+2025-07-15 10:26:34,747 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:28:52,370 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.56.27.53:5000
+2025-07-15 10:28:52,370 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 10:28:52,370 - INFO -  * Restarting with stat
+2025-07-15 10:28:52,613 - WARNING -  * Debugger is active!
+2025-07-15 10:28:52,613 - INFO -  * Debugger PIN: 558-859-588
+2025-07-15 10:29:53,048 - INFO - 127.0.0.1 - - [15/Jul/2025 10:29:53] "GET /api/news HTTP/1.1" 200 -
+2025-07-15 10:32:41,947 - INFO - 127.0.0.1 - - [15/Jul/2025 10:32:41] "GET /api/news/1 HTTP/1.1" 200 -
+2025-07-15 10:33:32,928 - INFO - 127.0.0.1 - - [15/Jul/2025 10:33:32] "GET /api/news/3 HTTP/1.1" 200 -
+2025-07-15 10:33:38,087 - INFO - 127.0.0.1 - - [15/Jul/2025 10:33:38] "GET /api/news/4 HTTP/1.1" 200 -
+2025-07-15 10:33:42,459 - INFO - 127.0.0.1 - - [15/Jul/2025 10:33:42] "GET /api/news HTTP/1.1" 200 -
+2025-07-15 10:34:04,624 - INFO - 127.0.0.1 - - [15/Jul/2025 10:34:04] "GET /api/news/14 HTTP/1.1" 200 -

@@ -26,12 +26,12 @@ def get_db_connection():
     try:
         server = os.getenv('DB_HOST', 'localhost\\SQLEXPRESS')
         database = os.getenv('DB_NAME', 'news_scraper')
-        connection_string = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};Trusted_Connection=yes;'
-        # Dacă folosești SQL Server Authentication:
-        # username = os.getenv('DB_USER')
-        # password = os.getenv('DB_PASSWORD')
-        # connection_string = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password};'
-        
+        connection_string = (
+            f'DRIVER={{ODBC Driver 17 for SQL Server}};'
+            f'SERVER={server};'
+            f'DATABASE={database};'
+            f'Trusted_Connection=yes;'
+        )
         conn = pyodbc.connect(connection_string)
         return conn
     except Exception as e:
@@ -40,7 +40,7 @@ def get_db_connection():
 
 @app.route('/api/news', methods=['GET'])
 def get_news():
-    """Returnează toate articolele sau articole filtrate după parametri"""
+    """Returnează articole filtrate după parametri"""
     try:
         conn = get_db_connection()
         if not conn:
@@ -48,11 +48,20 @@ def get_news():
         
         cursor = conn.cursor()
         
+        # Parametri de filtrare
         source = request.args.get('source')
         category = request.args.get('category')
         limit = request.args.get('limit', default=20, type=int)
-        
-        query = "SELECT title, source, category, author, url, keywords, description, publishedAt, content, urlToImage FROM dbo.news WHERE 1=1"
+        start_date = request.args.get('start_date')  # Filtru dată
+        end_date = request.args.get('end_date')
+
+        # Construirea query-ului dinamic
+        query = """
+            SELECT id, title, source, category, author, url, keywords, 
+                   description, publishedAt, content, urlToImage 
+            FROM dbo.news 
+            WHERE 1=1
+        """
         params = []
         
         if source:
@@ -61,6 +70,12 @@ def get_news():
         if category:
             query += " AND category = ?"
             params.append(category)
+        if start_date:
+            query += " AND publishedAt >= ?"
+            params.append(start_date)
+        if end_date:
+            query += " AND publishedAt <= ?"
+            params.append(end_date)
         
         query += " ORDER BY publishedAt DESC"
         if limit:
@@ -72,6 +87,7 @@ def get_news():
         news = []
         for row in rows:
             news.append({
+                'id': row.id,
                 'title': row.title,
                 'source': row.source,
                 'category': row.category,
@@ -102,17 +118,22 @@ def get_news_by_id(id):
             return jsonify({'error': 'Nu s-a putut conecta la baza de date'}), 500
         
         cursor = conn.cursor()
-        cursor.execute("""
-            SELECT title, source, category, author, url, keywords, description, publishedAt, content, urlToImage
+        cursor.execute(
+            """
+            SELECT id, title, source, category, author, url, keywords, 
+                   description, publishedAt, content, urlToImage
             FROM dbo.news
             WHERE id = ?
-        """, (id,))
+            """,
+            (id,)
+        )
         row = cursor.fetchone()
         
         if not row:
             return jsonify({'error': 'Articolul nu a fost găsit'}), 404
         
         news_item = {
+            'id': row.id,
             'title': row.title,
             'source': row.source,
             'category': row.category,
